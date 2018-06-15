@@ -50,15 +50,6 @@ class DataLoader:
         print ('[extract_data] Finished extraction of ', filename)
         return data
 
-    def rescale_data(self, data):
-        """
-        Rescale data with range [0, 255] to [-0.5, 0.5].
-
-        :param data: Data to rescale.
-        :returns: Data rescaled to range [-0.5, 0.5].
-        """
-        return (data - (self.PIXEL_DEPTH / 2.0) ) / self.PIXEL_DEPTH
-
     def extract_label(self, filename):
         """
         Extract the labels into a vector of np.int64 label ids.
