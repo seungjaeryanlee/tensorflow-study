@@ -1,3 +1,7 @@
+# Custom for MNIST Data: only track compressed files
+data/mnist/test/
+data/mnist/train/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
